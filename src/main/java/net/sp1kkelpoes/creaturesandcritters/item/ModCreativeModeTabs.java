@@ -18,6 +18,7 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.WEIRD_GEM.get()))
                     .title(Component.translatable("creativetab.creatures_and_critters_items_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.GRASSLING_SPAWN_EGG.get());
                         output.accept(ModItems.WEIRD_GEM.get());
                     })
                     .build());

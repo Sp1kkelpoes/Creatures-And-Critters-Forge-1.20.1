@@ -1,6 +1,8 @@
 package net.sp1kkelpoes.creaturesandcritters;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.entity.EntityRenderer;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -13,6 +15,8 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.sp1kkelpoes.creaturesandcritters.entity.ModEntities;
+import net.sp1kkelpoes.creaturesandcritters.entity.client.GrasslingRenderer;
 import net.sp1kkelpoes.creaturesandcritters.item.ModCreativeModeTabs;
 import net.sp1kkelpoes.creaturesandcritters.item.ModItems;
 import org.slf4j.Logger;
@@ -33,6 +37,8 @@ public class CreaturesAndCritters
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+
+        ModEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -65,7 +71,7 @@ public class CreaturesAndCritters
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            EntityRenderers.register(ModEntities.GRASSLING.get(), GrasslingRenderer::new);
         }
     }
 }
