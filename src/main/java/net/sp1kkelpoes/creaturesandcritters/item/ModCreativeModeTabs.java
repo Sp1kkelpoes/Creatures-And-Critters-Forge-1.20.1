@@ -35,6 +35,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(PotionUtils.setPotion(new ItemStack(Items.LINGERING_POTION), ModPotions.BOOM_POTION.get()));
 
+                        output.accept(PotionUtils.setPotion(new ItemStack(Items.TIPPED_ARROW), ModPotions.BOOM_POTION.get()));
+
                         //gem for later ig
                         output.accept(ModItems.WEIRD_GEM.get());
                     })

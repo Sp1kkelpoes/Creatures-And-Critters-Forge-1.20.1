@@ -8,5 +8,6 @@
   "effect.creaturesandcritters.boom": "Boom Effect",
   "item.minecraft.potion.effect.boom_potion": "Boom Potion",
   "item.minecraft.splash_potion.effect.boom_potion": "Splash Potion of Boom",
-  "item.minecraft.lingering_potion.effect.boom_potion": "Lingering Potion of Boom"
+  "item.minecraft.lingering_potion.effect.boom_potion": "Lingering Potion of Boom",
+  "item.minecraft.tipped_arrow.effect.boom_potion": "Tipped Arrow Of Boom"
 }
