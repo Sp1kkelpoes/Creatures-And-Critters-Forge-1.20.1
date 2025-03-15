@@ -13,17 +13,17 @@ import software.bernie.geckolib.model.data.EntityModelData;
 public class GrasslingModel extends GeoModel<GrasslingEntity> {
     @Override
     public ResourceLocation getModelResource(GrasslingEntity grasslingEntity) {
-        return new ResourceLocation(CreaturesAndCritters.MOD_ID, "geo/grassling.geo.json");
+        return ResourceLocation.tryParse(CreaturesAndCritters.MOD_ID + ":geo/grassling.geo.json");
     }
 
     @Override
     public ResourceLocation getTextureResource(GrasslingEntity grasslingEntity) {
-        return new ResourceLocation(CreaturesAndCritters.MOD_ID, "textures/entity/grassling_texture.png");
+        return ResourceLocation.tryParse(CreaturesAndCritters.MOD_ID + ":textures/entity/grassling_texture.png");
     }
 
     @Override
     public ResourceLocation getAnimationResource(GrasslingEntity grasslingEntity) {
-        return new ResourceLocation(CreaturesAndCritters.MOD_ID, "animations/animation.grassling.json");
+        return ResourceLocation.tryParse(CreaturesAndCritters.MOD_ID + ":animations/animation.grassling.json");
     }
 
     @Override
