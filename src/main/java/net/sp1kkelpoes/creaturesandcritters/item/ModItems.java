@@ -19,6 +19,11 @@ public class ModItems {
         public static final RegistryObject<Item> GRASSLING_SPAWN_EGG = ITEMS.register("grassling_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.GRASSLING, 0x4FB626, 0x366F1E, new Item.Properties()));
 
+    public static final RegistryObject<Item> RAW_GRASSLING_MEAT = ITEMS.register("raw_grassling_meat",
+            () -> new Item(new Item.Properties().food(ModFoods.RAW_GRASSLING_MEAT)));
+    public static final RegistryObject<Item> COOKED_GRASSLING_MEAT = ITEMS.register("cooked_grassling_meat",
+            () -> new Item(new Item.Properties().food(ModFoods.COOKED_GRASSLING_MEAT)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

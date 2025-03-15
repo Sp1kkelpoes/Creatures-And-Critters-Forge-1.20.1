@@ -2,5 +2,11 @@
   "item.creaturesandcritters.weird_gem": "Weird Gem",
   "creativetab.creatures_and_critters_items_tab": "Creatures And Critters Items",
   "item.creaturesandcritters.grassling_spawn_egg": "Grassling Spawn Egg",
-  "entity.creaturesandcritters.grassling": "Grassling"
+  "entity.creaturesandcritters.grassling": "Grassling",
+  "item.creaturesandcritters.raw_grassling_meat": "Raw Grassling Meat",
+  "item.creaturesandcritters.cooked_grassling_meat": "Cooked Grassling Meat",
+  "effect.creaturesandcritters.boom": "Boom Effect",
+  "item.minecraft.potion.effect.boom_potion": "Boom Potion",
+  "item.minecraft.splash_potion.effect.boom_potion": "Splash Potion of Boom",
+  "item.minecraft.lingering_potion.effect.boom_potion": "Lingering Potion of Boom"
 }

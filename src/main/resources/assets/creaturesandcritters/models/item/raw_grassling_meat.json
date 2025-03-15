@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "creaturesandcritters:item/raw_grassling_meat"
+  }
+}

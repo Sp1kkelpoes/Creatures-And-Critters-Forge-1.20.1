@@ -15,10 +15,12 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.sp1kkelpoes.creaturesandcritters.effect.ModEffects;
 import net.sp1kkelpoes.creaturesandcritters.entity.ModEntities;
 import net.sp1kkelpoes.creaturesandcritters.entity.client.GrasslingRenderer;
 import net.sp1kkelpoes.creaturesandcritters.item.ModCreativeModeTabs;
 import net.sp1kkelpoes.creaturesandcritters.item.ModItems;
+import net.sp1kkelpoes.creaturesandcritters.potion.ModPotions;
 import org.slf4j.Logger;
 import software.bernie.geckolib.GeckoLib;
 
@@ -39,6 +41,10 @@ public class CreaturesAndCritters
         ModItems.register(modEventBus);
 
         ModEntities.register(modEventBus);
+
+        ModEffects.register(modEventBus);
+
+        ModPotions.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

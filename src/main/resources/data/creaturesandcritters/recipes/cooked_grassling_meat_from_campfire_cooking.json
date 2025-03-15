@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 450,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "creaturesandcritters:raw_grassling_meat"
+  },
+  "result": "creaturesandcritters:cooked_grassling_meat"
+}
