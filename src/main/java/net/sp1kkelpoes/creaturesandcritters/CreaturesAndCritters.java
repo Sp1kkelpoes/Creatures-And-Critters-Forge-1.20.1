@@ -16,6 +16,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.sp1kkelpoes.creaturesandcritters.item.ModCreativeModeTabs;
 import net.sp1kkelpoes.creaturesandcritters.item.ModItems;
 import org.slf4j.Logger;
+import software.bernie.geckolib.GeckoLib;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(CreaturesAndCritters.MOD_ID)
@@ -36,7 +37,11 @@ public class CreaturesAndCritters
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
+
         modEventBus.addListener(this::addCreative);
+
+        GeckoLib.initialize();
+
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
